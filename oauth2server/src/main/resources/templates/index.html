@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http:/www.thymeleaf.org">
+<head th:replace="fragments :: html_head(pageTitle='Product Manager - Home')" />
+<body>
+<div class="container text-center">
+	<div><h1>To Enter Into Project You have to authenticate via oauth2 provided by google</h1></div>
+	<div>
+		<br/>
+		<h4><a th:href="@{/list}">Click Here to test your authentication</a></h4>
+		
+	</div>
+</div>
+</body>
+</html>
