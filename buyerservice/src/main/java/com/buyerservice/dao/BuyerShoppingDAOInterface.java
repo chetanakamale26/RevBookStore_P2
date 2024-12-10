@@ -16,6 +16,7 @@ import com.buyerservice.entity.ShoppingCart;
 
 @Repository
 public interface BuyerShoppingDAOInterface extends JpaRepository<ShoppingCart, Long> {
+	
 	 @Query("SELECT new com.buyerservice.dto.CartProductDTO(s.cartId, s.product.productId, s.quantity, s.totalPrice, s.productDescription, s.productName) " +
 	           "FROM ShoppingCart s WHERE s.user.userId = :userId")
 	    List<CartProductDTO> findByUserId(@Param("userId") Long userId);

@@ -82,7 +82,6 @@ public class BuyerController {
 	@Autowired
 	private BuyerCartService cartService;
 	
-	
 	@Autowired
 	private BuyerOrderService orderService;
 	
